@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gTV-IL-0wX" customClass="TopCollectionViewCell" customModule="ImdpApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="222"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="222"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFo-SL-vnw">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="116"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-sB-MPX">
+                        <rect key="frame" x="89" y="136" width="233" height="27.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Aeo-sB-MPX" secondAttribute="trailing" constant="88" id="8jx-tP-zxG"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="SFo-SL-vnw" secondAttribute="bottom" constant="72" id="BAW-Wl-tQ7"/>
+                <constraint firstItem="Aeo-sB-MPX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="89" id="Cnx-22-ngi"/>
+                <constraint firstAttribute="trailing" secondItem="SFo-SL-vnw" secondAttribute="trailing" id="W5M-V3-gVs"/>
+                <constraint firstItem="Aeo-sB-MPX" firstAttribute="top" secondItem="SFo-SL-vnw" secondAttribute="bottom" constant="20" id="ZzJ-c6-fWX"/>
+                <constraint firstItem="SFo-SL-vnw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="agC-Ch-7qu"/>
+                <constraint firstItem="SFo-SL-vnw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hl2-cZ-Nl5"/>
+            </constraints>
+            <size key="customSize" width="498" height="263"/>
+            <connections>
+                <outlet property="nameLbl" destination="Aeo-sB-MPX" id="LVM-cn-U4o"/>
+                <outlet property="topCategoryImage" destination="SFo-SL-vnw" id="xdz-8U-xjB"/>
+            </connections>
+            <point key="canvasLocation" x="247.32824427480915" y="-372.53521126760563"/>
+        </collectionViewCell>
+    </objects>
+</document>

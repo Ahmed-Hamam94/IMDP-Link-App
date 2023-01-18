@@ -1,0 +1,6 @@
+framework module Pods_ImdpApp {
+  umbrella header "Pods-ImdpApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
