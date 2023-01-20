@@ -11,7 +11,7 @@ class FavoriteTVTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tvTitleLbl: UILabel!{
         didSet{
-            tvTitleLbl.layer.cornerRadius = tvTitleLbl.frame.size.width / 8
+            tvTitleLbl.layer.cornerRadius = tvTitleLbl.frame.size.height / 2
             tvTitleLbl.layer.borderColor = UIColor.darkGray.cgColor
             tvTitleLbl.layer.borderWidth = 2
         }

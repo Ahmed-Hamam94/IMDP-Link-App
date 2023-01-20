@@ -18,7 +18,7 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var favoriteTitleLbl: UILabel!{
         didSet{
-            favoriteTitleLbl.layer.cornerRadius = favoriteTitleLbl.frame.size.width / 8
+            favoriteTitleLbl.layer.cornerRadius = favoriteTitleLbl.frame.size.height / 2
             favoriteTitleLbl.layer.borderColor = UIColor.darkGray.cgColor
             favoriteTitleLbl.layer.borderWidth = 2
         }
