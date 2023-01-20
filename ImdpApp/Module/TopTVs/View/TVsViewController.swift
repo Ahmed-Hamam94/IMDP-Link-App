@@ -86,7 +86,12 @@ extension TVsViewController: UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let VCDetailsTV = storyboard?.instantiateViewController(withIdentifier: "VCDetailsTV") as? TVsDetailsViewController{
-            VCDetailsTV.tvsObj = tvsViewModel?.tvsData?.items?[indexPath.row]
+            if searching {
+                VCDetailsTV.tvsObj = tvsViewModel?.searchingTVs[indexPath.row]
+            }else{
+                VCDetailsTV.tvsObj = tvsViewModel?.tvsData?.items?[indexPath.row]
+            }
+           
             navigationController?.pushViewController(VCDetailsTV, animated: true)
         }
     }

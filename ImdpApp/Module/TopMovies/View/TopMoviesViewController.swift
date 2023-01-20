@@ -90,7 +90,12 @@ extension TopMoviesViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let VCDetails = storyboard?.instantiateViewController(withIdentifier: "MovieDetailsViewController") as? MovieDetailsViewController{
-            VCDetails.moviewObj = topMoviesViewModel?.moviesData?.items?[indexPath.row]
+            if searching {
+                VCDetails.moviewObj = topMoviesViewModel?.searchingMovies[indexPath.row]
+            }else{
+                VCDetails.moviewObj = topMoviesViewModel?.moviesData?.items?[indexPath.row]
+            }
+            
             navigationController?.pushViewController(VCDetails, animated: true)
         }
     }
